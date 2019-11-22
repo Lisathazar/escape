@@ -5,6 +5,7 @@
     background-image: url("src/assets/homepage.png");
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 
 #title{
