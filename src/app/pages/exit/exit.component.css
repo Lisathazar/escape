@@ -1,0 +1,35 @@
+.background {
+    background-image: url("/assets/backgrounds/outside.jpg");
+    width: 1920px;
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.messageEnd {
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    width: 500px;
+    cursor: pointer;
+    opacity: 1;
+	
+ 
+}
+.messageEndNo {
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    width: 500px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+
+button{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
+}

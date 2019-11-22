@@ -1,0 +1,22 @@
+.background {
+    background-image: url("/assets/backgrounds/kitchen.png");
+    width: 1920px;
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.painting{
+    position: absolute;
+    top: 105px;
+    left: 1142px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.instructions{
+    position: absolute;
+    top: 970px;
+    left : 100px;
+    cursor: pointer;
+}

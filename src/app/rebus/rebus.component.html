@@ -1,0 +1,19 @@
+<div>
+    <div class="rebus">
+        <img src="/assets/backgrounds/rebus.jpg"class="rebusImg">
+    </div>
+    <div class = "inputRebus">
+        <label>TITRE DU FILM :</label>
+        <input [(ngModel)]="answer" type="text" id="answer" name="answer" size="18" >
+        <button (click)= "submitAnswerRebus()" type="submit" class="submitAnswer">ENVOYER</button>
+    </div>
+    <div *ngIf="goodAnswer === answerSubmited" class = "bravoRebus">
+        <a routerLink="living" [matDialogClose]><img src="/assets/instructions/bravo_titre.png" /></a>
+    </div>
+    <div *ngIf="blood" class="bloodDown">
+        <img src="../../assets/backgrounds/blood.png" >
+        <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+        <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
+    </div>
+</div>
+

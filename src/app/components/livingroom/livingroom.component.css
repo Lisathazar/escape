@@ -1,0 +1,84 @@
+
+.myDVD{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width : 1350px;
+    height: 700px ;
+    background : url("src/assets/backgrounds/dvdtheque.jpg") no-repeat;
+    background-size :cover;
+    background-repeat: no-repeat;
+}
+.movies{
+    padding : 50px 10px;
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.movie{
+    width: 80px;
+    position: relative;
+    z-index: 1;
+    
+}
+.choice{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding : 50px 10px;
+}
+.moviech{
+    padding-left: 200px;
+}
+.choice img{
+    width: 60px;
+
+}
+img{
+    border :solid transparent;
+    border-bottom-width: 2px;
+    border-left-width: 20px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-radius: 30px;
+}
+.bravo{
+    position: absolute ;
+    left: 700px;
+    top: 300px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.bloodDown{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9;
+
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+  @keyframes example {
+    0%   {top:-2000px;}
+    100% {top:0px;}
+  }
+
+.killerSay{
+    position: absolute ;
+    left: 500px;
+    top: 350px;
+    width: 50%;
+}
+
+.replayButton{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
+    cursor: pointer;
+}

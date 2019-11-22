@@ -1,0 +1,22 @@
+<div class="container">
+    <img *ngFor='let item of items' [src]="item.url" [id]="item.id" (click)='displayWord(item)'> 
+    <img *ngIf='display' src='../../../assets/instructions/inst_first.png' id='notice' (click)='displayNotice()'>
+    <div class="answer">
+        <img *ngIf="letterP" src="../assets/objectPhotos/p.png" class="displayResult">
+        <img *ngIf="letterS" src="../assets/objectPhotos/s.png" class="displayResult">
+        <img *ngIf="letterY" src="../assets/objectPhotos/y.png" class="displayResult">
+        <img *ngIf="letterC" src="../assets/objectPhotos/c.png" class="displayResult">
+        <img *ngIf="letterH" src="../assets/objectPhotos/h.png" class="displayResult">
+        <img *ngIf="letterO" src="../assets/objectPhotos/o.png" class="displayResult">
+        <img *ngIf="letterS1" src="../assets/objectPhotos/s1.png" class="displayResult">
+        <img *ngIf="letterE" src="../assets/objectPhotos/e.png" class="displayResult">
+    </div>
+    <div *ngIf="good === true" class = "bravo">
+        <a routerLink="/bedroom"><img src="/assets/instructions/bravo_titre.png" ></a>
+    </div>
+    <div *ngIf="blood" class="bloodDown">
+        <img src="../../assets/backgrounds/blood.png" >
+        <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+        <button class="replayButton" (click)="replay()">Rejouer</button>
+    </div>
+</div>

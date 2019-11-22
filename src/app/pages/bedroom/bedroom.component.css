@@ -1,0 +1,77 @@
+#background {
+    background-image: url("src/assets/backgrounds/bedroomBackground.jpg");
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.img{
+    cursor: pointer;
+}
+
+#cross{
+    position: absolute; top: 60px; left: 235px;
+}
+
+#holyWater{
+    position: absolute; top: 455px; left: 1727px; 
+}
+
+#bible{
+    position: absolute; top: 694px; left: 627px;
+}
+
+#maryPainting{
+    position: absolute; top: 175px; left: 1430px;
+}
+
+#paintingLeft{
+    position: absolute; top: 225px; left: 210px;
+
+}
+
+#instructions {
+    position: absolute;
+    top: 970px;
+    left : 100px;
+    cursor: pointer;
+}
+
+#exitScreen{
+    background-image: url('src/assets/instructions/bravo_exorc.png');
+    position: absolute; top: 120px; right: 800px;
+    height: 468px;
+    width: 466px;
+}
+
+.bloodDown{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+  @keyframes example {
+    0%   {top:-2000px;}
+    100% {top:0px;}
+  }
+
+.killerSay{
+    position: absolute ;
+    left: 500px;
+    top: 350px;
+    width: 50%;
+}
+
+.replayButton{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
+    cursor: pointer;
+}

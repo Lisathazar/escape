@@ -1,0 +1,15 @@
+
+<div id="background">
+    <img class="img" *ngFor = "let image of images" [src] ="image.url" id ="{{image.id}}" (click)="addAnswer(image)">
+    <img src="/assets/instructions/inst_bedroom.png" id = "instructions">    
+</div>
+
+<div *ngIf = "exitScreen === true" id="exitScreen">
+        <a routerLink="/hall"><img src="assets/instructions/bravo_exorc.png" ></a>
+</div>
+
+<div *ngIf="blood" class="bloodDown">
+    <img src="../../assets/backgrounds/blood.png" >
+    <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+    <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
+</div>

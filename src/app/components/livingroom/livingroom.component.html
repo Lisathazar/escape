@@ -1,0 +1,18 @@
+
+    <div class="myDVD">
+        <div class="movies">
+            <div class="movie" *ngFor="let movie of moviesToDisplay"  (click)="MovieChoose(movie)" appFront><img appFront [src]="movie.posterUrl"></div>
+        </div>
+        <div class="choice">
+            <div class="moviech" *ngFor="let movie of moviesSelected"><img [src]="movie.posterUrl"></div>
+        </div>
+        <div *ngIf="good === true" class = "bravo">
+            <a routerLink="exit" [matDialogClose]><img src="/assets/instructions/bravo_fin.png" ></a>
+        </div>
+        <div *ngIf="blood" class="bloodDown">
+            <img src="../../assets/backgrounds/blood.png" >
+            <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+            <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
+        </div>
+    </div>
+

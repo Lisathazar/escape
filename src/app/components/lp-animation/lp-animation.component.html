@@ -1,0 +1,12 @@
+<div class="container">
+
+<div id="title" [@changeTitleSize]=currentState>
+
+</div>
+
+<div *ngIf="hideButton === true">
+    <button (click)="changeTitleSize()" (click)="hideButtonClicked()" id="play">JOUER</button>
+</div>
+
+</div>
+

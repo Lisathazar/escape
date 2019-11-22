@@ -1,0 +1,58 @@
+.rebusImg{
+    width: 1500px;
+}
+
+.inputRebus{
+    position: absolute;
+    top: 820px;
+    left: 1200px;
+    font-size: 20px;
+    color: white;
+}
+
+#answer{
+    width: 120px;
+    height: 25px;
+    margin: 5px;
+}
+
+.submitAnswer{
+    height: 25px;
+}
+
+.bravoRebus{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+}
+
+.bloodDown{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+  @keyframes example {
+    0%   {top:-2000px;}
+    100% {top:0px;}
+  }
+
+.killerSay{
+    position: absolute ;
+    left: 500px;
+    top: 350px;
+    width: 50%;
+}
+
+.replayButton{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
+    cursor: pointer;
+}

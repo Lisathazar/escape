@@ -1,0 +1,24 @@
+.container{
+    padding : 0;
+    margin: 0;
+    width : 1920px;
+    height: 1080px;
+    background : url("src/assets/backgrounds/living2.jpg") no-repeat;
+    background-size :cover;
+    
+}
+
+.dvdtheque{
+    width: auto;
+    position: absolute;
+    top: 488px;
+    left : 1568px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.inst{
+    width: auto;
+    position: absolute;
+    top: 970px;
+    left : 100px;
+}

@@ -1,0 +1,28 @@
+.hall {
+    background-image: url("/assets/backgrounds/hallway.jpg");
+    width: 1920px;
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.blood{
+    position: absolute;
+    left : 450px;
+    top : 60px
+}
+.blood:hover{
+  cursor: pointer;
+  
+}
+.no-padding .mat-dialog-container {
+  padding: 0;
+}
+.inst{
+  position: absolute;
+  top: 970px;
+  left : 100px;
+  cursor: pointer;
+}
